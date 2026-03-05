@@ -103,6 +103,11 @@ body {
   line-height: 1.03;
 }
 
+.hero-break::after {
+  content: "\A";
+  white-space: pre;
+}
+
 /* .nosso-compromisso, */
 .nossa-estrategia {
   background: #ebebeb;
@@ -265,6 +270,7 @@ body {
 .area-card__conteudo {
   padding: 30px 28px 26px;
   text-align: center;
+  background: #F9F9F9;
 }
 
 .area-card__conteudo h3 {
@@ -382,7 +388,7 @@ body {
 }
 
 .foco-card--imagem .foco-card__painel {
-  padding: 0 24px 30px;
+  padding: 0 24px 15px;
 }
 
 .foco-card--imagem.is-open {
@@ -449,6 +455,11 @@ body {
   background: #c12578;
   position: relative;
   flex: 0 0 38px;
+  cursor: pointer;
+}
+
+.foco-card__icone:disabled {
+  cursor: default;
 }
 
 .foco-card__icone::before,
