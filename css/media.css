@@ -1,1 +1,392 @@
-/* Desktop-first: breakpoints serão adicionados após validação da versão 1440px no Figma. */
+@media (max-width: 1300px) {
+  :root {
+    --desktop-side-padding: 84px;
+  }
+
+  .hero-card {
+    max-width: 620px;
+  }
+
+  .hero-card h1 {
+    font-size: 46px;
+  }
+
+  .hero-card p {
+    font-size: 17px;
+  }
+
+  .nosso-compromisso__conteudo p,
+  .areas-foco__texto,
+  .foco-card__painel p,
+  .foco-card__painel li,
+  .cuidado-sustentavel__conteudo p {
+    font-size: 17px;
+  }
+
+  .nosso-compromisso .section__container,
+  .nossa-estrategia .section__container,
+  .cuidado-sustentavel .section__container {
+    gap: 48px;
+  }
+
+  .nosso-compromisso__midia,
+  .video-thumb,
+  .cuidado-sustentavel__midia {
+    flex-basis: 460px;
+  }
+
+  .video-thumb {
+    width: 460px;
+  }
+
+  .pipeline__faixa {
+    padding-left: 64px;
+    padding-right: 64px;
+    gap: 36px;
+  }
+
+  .pipeline__midia {
+    flex-basis: 500px;
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --desktop-side-padding: 72px;
+  }
+
+  .hero-card h1 {
+    font-size: 42px;
+  }
+
+  .nosso-compromisso__conteudo p,
+  .areas-foco__texto,
+  .foco-card__painel p,
+  .foco-card__painel li,
+  .cuidado-sustentavel__conteudo p {
+    font-size: 16px;
+  }
+
+  .nosso-compromisso__conteudo,
+  .nossa-estrategia__conteudo,
+  .cuidado-sustentavel__conteudo {
+    max-width: 52%;
+  }
+
+  .nosso-compromisso__midia,
+  .video-thumb,
+  .cuidado-sustentavel__midia {
+    flex: 0 0 44%;
+  }
+
+  .video-thumb {
+    width: auto;
+  }
+
+  .area-card__conteudo h3 {
+    font-size: 34px;
+  }
+
+  .foco-card__cabecalho h3,
+  .foco-card__rodape h3 {
+    font-size: 24px;
+  }
+
+  .pipeline__faixa {
+    padding-left: 52px;
+    padding-right: 52px;
+  }
+
+  .pipeline__conteudo {
+    max-width: 48%;
+  }
+
+  .pipeline__midia {
+    flex: 0 0 46%;
+  }
+}
+
+@media (max-width: 1100px) {
+  :root {
+    --desktop-side-padding: 64px;
+  }
+
+  .hero-card h1 {
+    font-size: 38px;
+  }
+
+  .nosso-compromisso__conteudo p,
+  .areas-foco__texto,
+  .foco-card__painel p,
+  .foco-card__painel li,
+  .cuidado-sustentavel__conteudo p {
+    font-size: 15px;
+  }
+
+  .nosso-compromisso .section__container {
+    padding-top: 76px;
+    padding-bottom: 76px;
+  }
+
+  .nossa-estrategia .section__container,
+  .areas-foco .section__container,
+  .cuidado-sustentavel .section__container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .nossa-estrategia__destaque {
+    font-size: 24px;
+  }
+
+  .nossa-estrategia__cta {
+    font-size: 21px;
+  }
+
+  .principais-areas__grid {
+    gap: 16px;
+  }
+
+  .area-card__conteudo {
+    padding: 24px 20px;
+  }
+
+  .area-card__conteudo h3 {
+    font-size: 31px;
+  }
+
+  .pipeline__faixa {
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --desktop-side-padding: 56px;
+  }
+
+  .hero-card {
+    max-width: 560px;
+  }
+
+  .hero-card h1 {
+    font-size: 35px;
+  }
+
+  .hero-card p {
+    font-size: 16px;
+  }
+
+  .nosso-compromisso .section__container,
+  .nossa-estrategia .section__container,
+  .cuidado-sustentavel .section__container {
+    gap: 32px;
+  }
+
+  .nosso-compromisso__conteudo h2,
+  .principais-areas__titulo,
+  .areas-foco__titulo,
+  .cuidado-sustentavel__conteudo h2,
+  .pipeline__conteudo h2 {
+    font-size: 27px;
+  }
+
+  .areas-foco__texto {
+    font-size: 15px;
+  }
+
+  .foco-card__painel p,
+  .foco-card__painel li {
+    font-size: 15px;
+  }
+
+  .nosso-compromisso__conteudo p,
+  .cuidado-sustentavel__conteudo p {
+    font-size: 15px;
+  }
+
+  .pipeline__botao {
+    min-height: 52px;
+    width: 162px;
+  }
+}
+
+@media (max-width: 900px) {
+  :root {
+    --desktop-side-padding: 44px;
+  }
+
+  .hero-card {
+    max-width: 520px;
+  }
+
+  .hero-card h1 {
+    font-size: 32px;
+  }
+
+  .nosso-compromisso .section__container,
+  .nossa-estrategia .section__container,
+  .cuidado-sustentavel .section__container {
+    gap: 24px;
+  }
+
+  .nosso-compromisso__conteudo p,
+  .cuidado-sustentavel__conteudo p,
+  .pipeline__conteudo p,
+  .referencias__lista {
+    font-size: 15px;
+  }
+
+  .principais-areas__grid {
+    gap: 12px;
+  }
+
+  .area-card {
+    min-height: 392px;
+  }
+
+  .area-card img {
+    height: 160px;
+  }
+
+  .area-card__conteudo h3 {
+    font-size: 27px;
+  }
+
+  .area-card__conteudo p {
+    font-size: 14px;
+  }
+
+  .pipeline__faixa {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --desktop-side-padding: 24px;
+  }
+
+  .hero {
+    min-height: 320px;
+    background-position: 68% center;
+  }
+
+  .hero .section__container {
+    min-height: 320px;
+  }
+
+  .hero-card {
+    max-width: 100%;
+  }
+
+  .hero-card h1 {
+    font-size: 30px;
+  }
+
+  .nosso-compromisso .section__container,
+  .nossa-estrategia .section__container,
+  .cuidado-sustentavel .section__container {
+    flex-direction: column;
+  }
+
+  .nosso-compromisso__conteudo,
+  .nossa-estrategia__conteudo,
+  .cuidado-sustentavel__conteudo,
+  .nosso-compromisso__midia,
+  .video-thumb,
+  .cuidado-sustentavel__midia,
+  .pipeline__conteudo,
+  .pipeline__midia {
+    max-width: 100%;
+    flex-basis: auto;
+    width: 100%;
+  }
+
+  .principais-areas__grid,
+  .areas-foco__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pipeline .section__container {
+    padding-bottom: 64px;
+  }
+
+  .pipeline__faixa {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --desktop-side-padding: 16px;
+  }
+
+  .hero {
+    min-height: 290px;
+  }
+
+  .hero .section__container {
+    min-height: 290px;
+  }
+
+  .hero-card h1 {
+    font-size: 27px;
+  }
+
+  .hero-card p,
+  .nosso-compromisso__conteudo p,
+  .areas-foco__texto,
+  .foco-card__painel p,
+  .foco-card__painel li,
+  .cuidado-sustentavel__conteudo p,
+  .pipeline__conteudo p,
+  .referencias__lista {
+    font-size: 14px;
+  }
+
+  .foco-card--acordeon {
+    min-height: auto;
+  }
+
+  .pipeline__botao {
+    min-height: 48px;
+    width: 150px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 393px) {
+  :root {
+    --desktop-side-padding: 12px;
+  }
+
+  .hero-card h1 {
+    font-size: 24px;
+  }
+
+  .nosso-compromisso__conteudo h2,
+  .principais-areas__titulo,
+  .areas-foco__titulo,
+  .cuidado-sustentavel__conteudo h2,
+  .pipeline__conteudo h2 {
+    font-size: 24px;
+  }
+
+  .area-card__conteudo h3,
+  .foco-card__cabecalho h3,
+  .foco-card__rodape h3 {
+    font-size: 22px;
+  }
+
+  .foco-card__icone {
+    width: 34px;
+    height: 34px;
+    flex-basis: 34px;
+  }
+}
