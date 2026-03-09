@@ -5,10 +5,25 @@ videoButtons.forEach((button) => {
     const videoId = button.dataset.videoId;
     if (!videoId || button.dataset.loaded === 'true') return;
 
+    if (window.location.protocol === 'file:') {
+      window.open(`https://www.youtube.com/watch?v=${videoId}`, '_blank', 'noopener,noreferrer');
+      return;
+    }
+
+    const params = new URLSearchParams({
+      autoplay: '1',
+      rel: '0'
+    });
+
+    if (window.location.origin && window.location.origin !== 'null') {
+      params.set('origin', window.location.origin);
+    }
+
     const iframe = document.createElement('iframe');
-    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+    iframe.src = `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
     iframe.title = 'Vídeo institucional';
     iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
     iframe.allowFullscreen = true;
 
     button.innerHTML = '';
